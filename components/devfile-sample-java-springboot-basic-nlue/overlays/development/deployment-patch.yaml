@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-nlue
+  namespace: e2e-demos-xyvr-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:7679e94744aa737023b357af273e681131ccd4d118c65a1edd60ae7521796c9d
+        name: my-java-springboot
+        resources: {}
+status: {}
